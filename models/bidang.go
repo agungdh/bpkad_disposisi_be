@@ -3,8 +3,8 @@ package models
 import "time"
 
 type Bidang struct {
-	ID        int
-	Bidang    string
+	ID        uint
+	Bidang    string `gorm:"type:varchar(255)"`
 	CreatedAt time.Time
 	UpdatedAt time.Time
 }
